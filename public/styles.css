@@ -53,7 +53,6 @@ a:focus {
   padding: 1.25rem 5vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .site-header .logo {
@@ -218,6 +217,38 @@ main {
   align-self: flex-start;
 }
 
+/* ── Success Page ── */
+.success-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 5vw;
+}
+
+.success-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 3rem 2.5rem;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+}
+
+.success-card h1 {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.success-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+}
+
 /* ── Site Footer ── */
 .site-footer {
   background-color: var(--color-primary);
@@ -250,11 +281,5 @@ main {
 
   .contact form {
     padding: 1.25rem;
-  }
-
-  .site-header {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
   }
 }
