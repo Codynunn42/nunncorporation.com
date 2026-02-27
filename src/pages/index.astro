@@ -1,108 +1,105 @@
----
-import Layout from '../components/layout.astro';
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nunn Corporation — reliable services and solutions you can count on."
+    />
+    <title>Nunn Corporation</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <span class="logo">Nunn<span>Corporation</span></span>
+    </header>
 
-<style>
-.steps {
-  background: var(--light);
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: min(90vw, 250px);
-  justify-content: center;
-  margin-top: 3rem;
-  padding: 5rem 5vw;
-  width: 100vw;
-}
-
-@media (min-width: 550px) {
-  .steps {
-    grid-template-columns: repeat(2, min(calc(50% - 1rem), 250px));
-  }
-}
-
-@media (min-width: 1050px) {
-  .steps {
-    grid-template-columns: repeat(4, min(calc(25% - 1.5rem), 250px));
-  }
-}
-
-.step {
-  background: var(--white);
-  border: 1px solid var(--lightBorder);
-  border-radius: var(--card-radius);
-  display: flex;
-  flex-direction: column;
-  font-size: 0.75rem;
-  padding: 1rem 1.5rem 1.5rem;
-  text-align: left;
-  box-shadow: 0 2px 4px rgb(14 30 37 / 12%);
-}
-
-.stepHeading {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-
-</style>
-
-<Layout
-  title="Netlify Feature Tour"
-  description="This is a small site to show the most powerful features of Netlify quickly!"
-  home
->
-  <main class="steps">
-    <section class="step">
-      <h2 class="stepHeading">Deploy Previews</h2>
+    <section class="hero">
+      <h1>Solutions You Can Count On</h1>
       <p>
-        Every pull request is automatically built in an
-        identical-to-production environment for
-        <strong>painless QA, feedback, and review.</strong>
+        Nunn Corporation delivers dependable services and innovative solutions
+        tailored to meet your needs.
       </p>
-      <a href="/deploy-previews" class="button">
-        Learn more <span class="sr-only">about Deploy Previews</span>
-      </a>
+      <a href="#contact" class="btn">Get in Touch</a>
     </section>
 
-    <section class="step">
-      <h2 class="stepHeading">Instant Rollbacks</h2>
-      <p>
-        Confidently ship to production with the knowledge that it’s a
-        one-click operation to roll back to a previous version of the site.
-        <strong>Instant disaster recovery!</strong>
-      </p>
-      <a href="/instant-rollbacks" class="button">
-        Learn more
-        <span class="sr-only">about Instant Rollbacks</span>
-      </a>
-    </section>
+    <main>
+      <div class="container">
+        <section class="services">
+          <h2>What We Do</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <h3>Consulting</h3>
+              <p>
+                Strategic guidance to help your business grow efficiently and
+                sustainably.
+              </p>
+            </div>
+            <div class="service-card">
+              <h3>Development</h3>
+              <p>
+                Custom software and web solutions built to fit your exact
+                specifications.
+              </p>
+            </div>
+            <div class="service-card">
+              <h3>Support</h3>
+              <p>
+                Ongoing maintenance and support so your operations run without
+                interruption.
+              </p>
+            </div>
+          </div>
+        </section>
 
-    <section class="step">
-      <h2 class="stepHeading">Netlify Functions</h2>
-      <p>
-        <strong>Serverless functions are superpowers for web developers!</strong>
-        Securely handle server-like requirements at any scale with no
-        provisioning, scaling, or ops overhead.
-      </p>
-      <a href="/functions" class="button">
-      Learn more
-      <span class="sr-only">about Netlify Functions</span>
-      </a>
-    </section>
+        <section class="contact" id="contact">
+          <h2>Contact Us</h2>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="How can we help you?"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn form-submit">Send Message</button>
+          </form>
+        </section>
+      </div>
+    </main>
 
-    <section class="step">
-      <h2 class="stepHeading">Netlify Forms</h2>
+    <footer class="site-footer">
       <p>
-        Handle user input with a single line of code. Netlify Forms allow
-        any HTML form to
-        <strong>
-            accept submissions, send notification emails, and trigger custom events.
-        </strong>
+        &copy; 2024 Nunn Corporation. All rights reserved.
       </p>
-      <a href="/netlify-forms" class="button">
-        Learn more <span class="sr-only">about Netlify Forms</span>
-      </a>
-    </section>
-  </main>
-</Layout>
+    </footer>
+  </body>
+</html>
