@@ -1,20 +1,6 @@
 {
   "name": "nunncorporation",
-  "routes": [
-    "nunncorporation.com/*"
-  ],
   "compatibility_date": "2025-09-27",
-  "observability": {
-    "enabled": true
-  },
   "main": "dist/_worker.js/index.js",
-  "compatibility_flags": [
-    "global_fetch_strictly_public",
-    "nodejs_compat"
-  ],
-  "assets": {
-    "binding": "ASSETS",
-    // Put static/site assets here to avoid uploading worker files
-    "directory": "dist/public"
-  }
+  "compatibility_flags": ["nodejs_compat"]
 }
