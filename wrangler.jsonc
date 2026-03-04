@@ -1,5 +1,8 @@
 {
   "name": "nunncorporation",
+  "routes": [
+    "nunncorporation.com/*"
+  ],
   "compatibility_date": "2025-09-27",
   "observability": {
     "enabled": true
@@ -11,6 +14,7 @@
   ],
   "assets": {
     "binding": "ASSETS",
-    "directory": "dist"
+    // Put static/site assets here to avoid uploading worker files
+    "directory": "dist/public"
   }
 }
