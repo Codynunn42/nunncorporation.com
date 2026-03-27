@@ -162,17 +162,6 @@ const { title, description, home = false } = Astro.props;
     .footer li {
       margin: 0 1em;
     }
-
-    .heart {
-      display: inline-block;
-      vertical-align: top;
-      width: 1.1rem;
-    }
-
-    .heart img {
-      display: block;
-      width: 100%;
-    }
   </style>
 </head>
 <body>
@@ -191,25 +180,7 @@ const { title, description, home = false } = Astro.props;
   <slot />
 
   <footer class="footer">
-    <nav>
-      <ul>
-        <li>
-          <a class="footer-link" href="https://www.netlify.com/trust-center/">Trust Center</a>
-        </li>
-        <li>
-          <a class="footer-link" href="https://www.netlify.com/privacy/">Privacy</a>
-        </li>
-        <li>
-          <a class="footer-link" href="https://www.netlify.com/security/">Security</a>
-        </li>
-        <li>
-          <a class="footer-link" href="https://www.netlify.com/gdpr-ccpa/">GDPR/CCPA</a>
-        </li>
-        <li>
-          <a class="footer-link" href="mailto:fraud@netlify.com?subject=Abuse%20report&body=Please%20include%20the%20site%20URL%20and%20reason%20for%20your%20report%2C%20and%20we%20will%20reply%20promptly." target="_blank" rel="noopener noreferrer">Abuse</a>
-        </li>
-      </ul>
-    </nav>
+    <p>&copy; {new Date().getFullYear()} NunnCorporation. All rights reserved.</p>
   </footer>
 
 </body>
