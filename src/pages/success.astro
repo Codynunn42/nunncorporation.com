@@ -1,18 +1,27 @@
----
-import Layout from '../components/layout.astro';
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Message received — Nunn Corporation" />
+    <title>Message Received | Nunn Corporation</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="logo">Nunn<span>Corporation</span></a>
+    </header>
 
-<style>
-h2 {
-  text-align: center;
-}
-</style>
+    <main class="success-main">
+      <div class="success-card">
+        <h1>Message Received!</h1>
+        <p>Thanks for reaching out. We'll get back to you as soon as possible.</p>
+        <a href="/" class="btn">Back to Home</a>
+      </div>
+    </main>
 
-<Layout
-  title="Netlify Forms"
-  description="Turn any HTML form into a functional form that can receive submissions with a single line of code."
->
-  <main>
-    <h2>Submission received!</h2>
-  </main>
-</Layout>
+    <footer class="site-footer">
+      <p>&copy; 2024 Nunn Corporation. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
