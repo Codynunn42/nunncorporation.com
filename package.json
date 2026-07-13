@@ -15,9 +15,9 @@
     "@astrojs/sitemap": "^1.0.0",
     "@netlify/netlify-marketing-tokens": "^1.1.0",
     "astro": "^5.18.0",
-    "wrangler": "^4.69.0"
+    "wrangler": "^4.95.0"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.6.12"
+    "@astrojs/cloudflare": "^13.6.0"
   }
 }
