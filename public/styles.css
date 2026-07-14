@@ -266,6 +266,12 @@ main {
   color: #fff;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 @media (max-width: 600px) {
   .hero {
     padding: 3rem 5vw;
