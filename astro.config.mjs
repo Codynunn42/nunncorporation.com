@@ -5,9 +5,9 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://feature-tour.netlify.app',
+  site: 'https://nunncorporation.com',
   integrations: [preact(), sitemap({
-    canonicalURL: 'https://feature-tour.netlify.app'
+    canonicalURL: 'https://nunncorporation.com'
   })],
   output: "server",
   adapter: cloudflare()
