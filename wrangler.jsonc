@@ -11,6 +11,6 @@
   ],
   "assets": {
     "binding": "ASSETS",
-    "directory": "main"
+    "directory": "dist"
   }
 }
