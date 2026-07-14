@@ -11,8 +11,7 @@
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^1.0.0",
-    "@netlify/netlify-marketing-tokens": "^1.1.0",
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "^5.18.0",
     "wrangler": "^4.69.0"
   },
