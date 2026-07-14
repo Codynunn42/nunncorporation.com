@@ -11,10 +11,10 @@
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
-    "@astrojs/preact": "^1.0.2",
-    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/preact": "^6.0.0",
+    "@astrojs/sitemap": "^3.0.0",
     "@netlify/netlify-marketing-tokens": "^1.1.0",
-    "astro": "^5.18.0",
+    "astro": "^6.3.0",
     "wrangler": "^4.95.0"
   },
   "dependencies": {
