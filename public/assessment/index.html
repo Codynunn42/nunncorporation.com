@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Request a governed Executive Assessment from Nunn Corporation to clarify outcomes, authority, blockers, risk, and next actions."
+    />
+    <title>Executive Assessment | Nunn Corporation</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/" aria-label="Nunn Corporation home">Nunn<span>Corporation</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/solutions/">Solutions</a>
+        <a href="/library/">Executive Library</a>
+        <a href="/assessment/" aria-current="page">Assessment</a>
+      </nav>
+    </header>
+
+    <main class="detail-main">
+      <section class="detail-hero assessment-hero">
+        <p class="eyebrow">Executive Assessment</p>
+        <h1>Turn the operating question into a decision-ready next step.</h1>
+        <p>
+          Share the outcome, decision, constraints, and timing. Nunn Corporation
+          will review the request, identify the appropriate assessment lane,
+          and coordinate the next conversation.
+        </p>
+      </section>
+
+      <section class="container assessment-layout" aria-labelledby="assessment-heading">
+        <div class="assessment-intro">
+          <p class="eyebrow">Governed intake</p>
+          <h2 id="assessment-heading">Request an Executive Assessment.</h2>
+          <p>
+            This is an executive intake, not a command channel. Do not submit
+            passwords, access tokens, controlled government information,
+            customer records, financial account data, or other secrets.
+          </p>
+          <ul class="check-list">
+            <li>Clarify the decision and desired outcome.</li>
+            <li>Identify authority owners, constraints, and timing.</li>
+            <li>Route the request to assessment, advisory, or a scoped walkthrough.</li>
+          </ul>
+        </div>
+
+        <form
+          class="assessment-form"
+          name="executive-assessment"
+          method="POST"
+          action="/success/"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="executive-assessment" />
+          <p class="hidden-field">
+            <label>Do not fill this out: <input name="bot-field" autocomplete="off" /></label>
+          </p>
+
+          <fieldset>
+            <legend>Contact</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required maxlength="120" />
+              </div>
+              <div class="form-group">
+                <label for="email">Work email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required maxlength="160" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="organization">Organization</label>
+                <input id="organization" name="organization" type="text" autocomplete="organization" required maxlength="160" />
+              </div>
+              <div class="form-group">
+                <label for="role">Role</label>
+                <input id="role" name="role" type="text" autocomplete="organization-title" required maxlength="120" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Decision context</legend>
+            <div class="form-group">
+              <label for="objective">Mission or operating objective</label>
+              <textarea id="objective" name="objective" required minlength="20" maxlength="1200" placeholder="What outcome needs to move forward?"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="decision">Decision needed</label>
+              <textarea id="decision" name="decision" required minlength="20" maxlength="1200" placeholder="What decision, alignment, or commitment is required?"></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="stage">Current stage</label>
+                <select id="stage" name="stage" required>
+                  <option value="">Select a stage</option>
+                  <option value="discovery">Discovery</option>
+                  <option value="planning">Planning</option>
+                  <option value="pilot-readiness">Pilot readiness</option>
+                  <option value="active-delivery">Active delivery</option>
+                  <option value="recovery">Recovery or course correction</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="deadline">Decision deadline</label>
+                <input id="deadline" name="deadline" type="date" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="constraints">Constraints or blockers</label>
+              <textarea id="constraints" name="constraints" maxlength="1200" placeholder="Summarize non-sensitive constraints, dependencies, or risks."></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Requested next step</legend>
+            <div class="form-group">
+              <label for="next-step">Preferred handoff</label>
+              <select id="next-step" name="next-step" required>
+                <option value="">Choose a next step</option>
+                <option value="assessment-call">Schedule an assessment call</option>
+                <option value="written-review">Request a written readiness review</option>
+                <option value="scoped-walkthrough">Request a scoped walkthrough</option>
+              </select>
+            </div>
+            <label class="consent-row" for="safe-content">
+              <input id="safe-content" name="safe-content" type="checkbox" value="confirmed" required />
+              <span>I confirm this submission contains no secrets, credentials, controlled information, or sensitive customer data.</span>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="btn form-submit">Submit Assessment Request</button>
+          <p class="form-note">Submission requests human review. It does not authorize system access or execution.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Nunn Corporation. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

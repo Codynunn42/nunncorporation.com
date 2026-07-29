@@ -1,17 +1,12 @@
 {
-  "name": "@example/starter",
+  "name": "@nunncorp/nunncorporation-site",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "dev": "python3 -m http.server 4321 --directory public",
+    "start": "python3 -m http.server 4321 --directory public",
+    "build": "node scripts/build-static.js",
+    "preview": "python3 -m http.server 4322 --directory dist"
   },
-  "devDependencies": {
-    "@astrojs/preact": "^1.0.2",
-    "@astrojs/sitemap": "^1.0.0",
-    "@netlify/netlify-marketing-tokens": "^1.1.0",
-    "astro": "^2.0.0"
-  }
+  "devDependencies": {}
 }
