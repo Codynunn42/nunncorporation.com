@@ -1,0 +1,7 @@
+name = "nunncorporation-com"
+type = "javascript"
+account_id = "ba375ae64efe2bf9f87dae508f43a0bb"
+workers_dev = false
+
+[assets]
+directory = "dist"
