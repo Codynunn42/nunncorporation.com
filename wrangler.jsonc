@@ -10,13 +10,6 @@
     "global_fetch_strictly_public",
     "nodejs_compat"
   ],
-  "kv_namespaces": [
-    {
-      "binding": "SESSION",
-      "id": "aec8e5cc133b459aa63e63fff1df2e3b",
-      "preview_id": "aec8e5cc133b459aa63e63fff1df2e3b"
-    }
-  ],
   "assets": {
     "binding": "ASSETS",
     "directory": "dist"
