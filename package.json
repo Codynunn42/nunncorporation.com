@@ -6,8 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "npm run build && wrangler dev --config dist/server/wrangler.json",
-    "deploy": "npm run build && wrangler deploy --config dist/server/wrangler.json",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
